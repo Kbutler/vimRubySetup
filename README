@@ -1,0 +1,24 @@
+tar file for vim setup.
+
+contains:
+1. .vimrc
+2. DCT/engines -- uses pathogen to install vim repos from Github
+3. DCT/files   -- files that I need for my vimSetup. Change this to what is required.
+4. .vim/autoload -- contains the pathogen.vim to do downloads
+5. .vim/bundle   -- vim files are coied to here
+
+uses:
+1. Based on http://tammersaleh.com/posts/the-modern-vim-config-with-pathogenwith the variable file list removed from static engine.
+2. Sync machines
+3. My repository of vim files. Other users may have a different file list
+
+To use it:
+Created with tar -cvf vimRubySetup.tar .vimrc .DCT/ .vim/
+Note .vim/bundle was emptied of all downloaded files first.
+Extract with tar -xvf vimRubySetup.tar
+cd ~/DCT/engines
+ruby vim-update.rb ../files/vim-packages
+Download GVim and run.
+
+Notes::
+Engine is separate from files, so DCT/files/vim-packages is my personal setup. If this is used then change the file list as to what you require. But it does provide a setup for using GVim with Rails 3.
