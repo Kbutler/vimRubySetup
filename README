@@ -13,8 +13,8 @@ uses:
 3. My repository of vim files. Other users may have a different file list
 
 To use it:
-Created with tar -cvf vimRubySetup.tar .vimrc .DCT/ .vim/
 Note .vim/bundle was emptied of all downloaded files first.
+Created with tar -cvf vimRubySetup.tar .vimrc ./DCT/ .vim/
 Extract with tar -xvf vimRubySetup.tar
 cd ~/DCT/engines
 ruby vim-update.rb ../files/vim-packages
